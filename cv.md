@@ -31,6 +31,6 @@ I'm currently enhancing my frontend skills, specifically focusing on React at RS
    * hexlet.io courses
 ### English Language
    * Practicing at duolingo app
-   * My level is Intermediate/Upper-intermediate (according to the online test at [www.efset.org](www.efset.org))
+   * My level is Intermediate/Upper-intermediate (according to the online test at [www.efset.org](https://www.efset.org/)
    ![english test result](EF_set.jpg)
    
