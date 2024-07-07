@@ -1,0 +1,157 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.link {
+  color:#333;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.main-cv .sidebar {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FEBB59;
+}
+.sidebar .sidebar__content {
+  padding:20px;
+}
+.sidebar__content .sidebar__section {
+  margin-bottom: 50px;
+}
+.sidebar__title {
+  margin-bottom: 20px;
+}
+.sidebar .sidebar__img{
+  margin-left: -15px;
+  margin-right: -15px;
+  width: calc(100% + 30px);
+}
+.sidebar .sidebar__contact {
+  font-size: .8rem;
+}
+.sidebar__contact .contact__item {
+  margin-bottom: 20px;
+}
+.education__item {
+  margin-bottom: 20px;
+}
+.education__title {
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  position: relative;
+}
+.education__title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  background-color: #000;
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  transform: translateY(-50%);
+}
+.bold {
+  font-weight: 700;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.medium {
+  font-weight: 500;
+}
+.regular {
+  font-weight: 400;
+}
+.light {
+  font-weight: 300;
+}
+.content {
+  margin-bottom: 70px;
+}
+.content__header {
+  padding: 100px 40px;
+  min-height: 495px;
+}
+.content__header h1{
+  font-size: 70px;
+  margin-bottom: 0;
+}
+.content__header h2{
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-weight: 400;
+
+}
+.content__section {
+  padding: 20px 40px;
+}
+.content__title {
+  margin-bottom: 40px;
+}
+.experience__position {
+  padding-left: 40px;
+  position: relative;
+}
+.experience__position::after {
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FEBB59;
+}
+.experience__title {
+  margin-bottom: 0;
+}
+.experience__title > * {
+  max-width: 50%;
+}
+.experience__company {
+  display: flex;
+  justify-content: space-between;
+
+}
+.content__languages.languages {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.languages .languages__item {
+  flex: 1 0 33.333%;
+  padding-right: 20px;
+}
+.languages__item .languages__progress-bar {
+  width:100%;
+  background-color:#E8DCD4;
+  height: 20px;
+  border-radius: 10px;
+}
+.languages__item .languages__progress-value {
+  width:0;
+  background-color: #FEBB59;
+  height: 20px;
+  border-radius: 10px;
+  transition: all 1s ease-in;
+}
+code {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
