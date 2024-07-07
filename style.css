@@ -1,0 +1,252 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+header .container{
+  background-color: #FEBB59;
+  border-right: 5px solid black;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  align-items: center;
+}
+.header p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 28px;
+  padding-left: 20px;
+}
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+.header nav a{
+  color: black;
+  text-decoration: none;
+}
+.header nav a:hover{
+  text-decoration: underline;
+}
+.footer__wrapper .container{
+  background-color: #FEBB59;
+  border-top: 5px solid black;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  min-height: 70px;
+
+}
+.footer .footer__author-link {
+  display: block;
+  color: black;
+  margin-left: 30px;
+}
+.footer .school__link {
+  display: block;
+}
+.footer .school__link img {
+  display: block;
+  width:100px;
+}
+.footer .date-creation {
+  text-align: center;
+  margin-left: auto;
+}
+.link {
+  color:#333;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.main-cv .sidebar {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FEBB59;
+}
+.sidebar .sidebar__content {
+  padding: 20px;
+  position: relative;
+  padding-top: 100px;
+  margin-top: -115px;
+  z-index: 2;
+  background-color: #FEBB59;
+  margin-left: -15px;
+  margin-right: -15px;
+  clip-path: polygon(0% 0, 100% 7%, 100% 100%, 0px 100%);
+}
+.sidebar__content .sidebar__section {
+  margin-bottom: 50px;
+}
+.sidebar__title {
+  margin-bottom: 20px;
+}
+.sidebar .sidebar__img{
+  z-index: 1;
+    position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+  width: calc(100% + 30px);
+}
+.sidebar .sidebar__contact {
+  font-size: .8rem;
+}
+.sidebar__contact .contact__item {
+  margin-bottom: 20px;
+}
+.education__item {
+  margin-bottom: 20px;
+}
+.education__title {
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  position: relative;
+}
+.education__title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  background-color: #000;
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  transform: translateY(-50%);
+}
+.skills__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+.skills__level {
+  display: flex;
+  gap:5px;
+  align-items: center;
+  min-width:70px;
+}
+.skills__rate {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.skills__rate_black { 
+  background-color: black;
+}
+
+.skills__rate_visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.bold {
+  font-weight: 700;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.medium {
+  font-weight: 500;
+}
+.regular {
+  font-weight: 400;
+}
+.light {
+  font-weight: 300;
+}
+.content {
+  padding-bottom: 70px;
+  border-right: 5px solid #FEBB59;
+}
+.content__header {
+  padding: 100px 40px 50px;
+  min-height: 460px;
+}
+.content__header h1{
+  font-size: 70px;
+  margin-bottom: 0;
+}
+.content__header h2{
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-weight: 400;
+
+}
+.content__section {
+  padding: 20px 40px;
+}
+.content__title {
+  margin-bottom: 40px;
+}
+.experience__position {
+  padding-left: 40px;
+  position: relative;
+}
+.experience__position::after {
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FEBB59;
+}
+.experience__title {
+  margin-bottom: 0;
+}
+.experience__title > * {
+  max-width: 50%;
+}
+.experience__company {
+  display: flex;
+  justify-content: space-between;
+
+}
+.content__languages.languages {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.languages .languages__item {
+  flex: 1 0 33.333%;
+  padding-right: 20px;
+}
+.languages__item .languages__progress-bar {
+  width:100%;
+  background-color:#E8DCD4;
+  height: 20px;
+  border-radius: 10px;
+}
+.languages__item .languages__progress-value {
+  width:0;
+  background-color: #FEBB59;
+  height: 20px;
+  border-radius: 10px;
+  transition: all 1s ease-in;
+}
+code {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
