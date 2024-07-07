@@ -1,10 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>CV</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main class="main-cv">
+      <div class="container">
+        <div class="row">
+          <div class="sidebar col-3">
+            <div class="sidebar__avatar">
+              <img
+                class="sidebar__img"
+                src="./assets/img/ava.webp"
+                alt="Фотография Жаныбек Жандос"
+              />
+            </div>
+            <div class="sidebar__content">
+              <div class="sidebar__section sidebar__contact">
+                <h3 class="sidebar__title">Contact</h3>
+                <ul style="list-style: none;padding-left: 20px;">
+                  <li class="contact__item"><i class="fa fa-phone"></i>   <a href="tel:+77764222201" class="link" target="_blank">+7 776 422 22 01</a></li>
+                  <li class="contact__item"><i class="fa-solid fa-envelope"></i> <a href="mailto:zh.zhanybek@gmail.com" class="link" target="_blank">zh.zhanybek@gmail.com</a></li>
+                  <li class="contact__item"i><i class="fa-brands fa-telegram"></i> <a href="https://tttttt.me/Zhandaaa" class="link" target="_blank">Zhandaaa</a></li>
+                  <li class="contact__item"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/zhandos-zhanybek-bb502a207/" class="link" target="_blank"> Zhanybek Zhandos</a> </li>
+                </ul>
+              </div>
+              <div class="sidebar__section sidebar__education">
+                <h3 class="sidebar__title">Education</h3>
+                <div class="education__item">
+                  <div class="education__title">
+                    Bachelor CS
+                  </div>
+                  <div class="education__text">
+                    2011 - 2015 EKTU, Computer science
+                  </div>
+                </div>
+                <div class="education__item">
+                  <div class="education__title">
+                    Courses
+                  </div>
+                  <div class="education__text">
+                    hexlet.io
+                  </div>
+                  <div class="education__text">
+                    RSSchool
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar__section sidebar__skills">
+                <h3 class="sidebar__title">Skills</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS (Bootstrap, SASS/SCSS, BEM)</li>
+                  <li>Git, GitHub</li>
+                  <li>PHP</li>
+                  <li>
+                    JavaScript (Fundamentals, ES6+, DOM, JSON, Asynchronous
+                    JavaScript)
+                  </li>
+                  <li>React</li>
+                  <li>VS Code, IntelliJ IDEA</li>
+                  <li>Photoshop, Figma</li>
+                </ul>
+              </div>
+            </div>
+           
+          </div>
+          <div class="content col-9">
+            <div class="content__header">
+              <h1>Zhanybek Zhandos</h1>
+              <h2>Web Developer</h2>
+              <p>
+                I’m currently enhancing my frontend skills, specifically
+                focusing on React at RSSchool. With two years of experience as a
+                Bitrix programmer in a small firm, I am eager to completely
+                switch to front-end development.
+              </p>
+            </div>
+            <div class="content__section experience">
+              <h3 class="content__title">Work experience</h3>
+              <div class="experience__item">
+                <div class="experience__position">
+                  <h5 class="experience__title">
+                    windows system administrator
+                  </h5>
+                  <div class="experience__company">
+                    <p>LLP ‘VK Sertik’, Oskemen city</p>
+                    <p>2015 - 2018</p>
+                  </div>
+                </div>
+                <p class="experience__info">
+                  As a Windows System Administrator, I was responsible for the
+                  installation and maintenance of computer and office equipment,
+                  ensuring the flawless operation of system software, and
+                  maintaining the functionality and security of the company's
+                  network. I handled the installation, configuration, and
+                  updating of office and application software, and possessed a
+                  thorough knowledge of PC hardware, allowing me to diagnose and
+                  troubleshoot issues efficiently.
+                </p>
+              </div>
+              <div class="experience__item">
+                <div class="experience__position">
+                  <h5 class="experience__title">helpdesk service engineer</h5>
+                  <div class="experience__company">
+                    <p>LLP ‘1C-Rating’, Oskemen city</p>
+                    <p>2018 - 2021</p>
+                  </div>
+                </div>
+                <p class="experience__info">
+                  As an IT Specialist, I provided comprehensive helpdesk support
+                  and maintenance for 1C software. My role involved
+                  communicating with clients to understand and resolve their
+                  issues and requests related to the use of 1C. I ensured the
+                  smooth operation of the software by performing regular updates
+                  and troubleshooting any technical problems. By effectively
+                  addressing client concerns and optimizing the system to meet
+                  their needs, I contributed to enhancing their overall
+                  experience and satisfaction with the 1C program.
+                </p>
+              </div>
+              <div class="experience__item">
+                <div class="experience__position">
+                  <h5 class="experience__title">bitrix programmer</h5>
+                  <div class="experience__company">
+                    <p>LLP ‘1C-Rating’, Oskemen city</p>
+                    <p>2021 - 2024</p>
+                  </div>
+                </div>
+                <p class="experience__info">
+                  As a 1C-Bitrix Software Engineer, I was responsible for the
+                  support and development of the company's internal websites. My
+                  role included creating websites on the Bitrix platform and
+                  developing landing pages for promotional campaigns. In
+                  addition to maintaining the company's websites, I also
+                  developed a proprietary SaaS solution that provided valuable
+                  tools for accountants and 1C specialists. This SaaS solution
+                  facilitated the deployment of cloud environments for client
+                  databases, ensuring they had efficient and secure access to
+                  their data.
+                </p>
+              </div>
+            </div>
+            <div class="content__section">
+              <h3 class="content__title">Languages</h3>
+              <div class="content__languages languages">
+                <div class="languages__item">
+                  <p>Kazakh</p>
+                  <div class="languages__progress-bar">
+                    <div
+                      class="languages__progress-value"
+                      data-percent="85"
+                    ></div>
+                  </div>
+                </div>
+                <div class="languages__item">
+                  <p>Russian</p>
+                  <div class="languages__progress-bar">
+                    <div
+                      class="languages__progress-value"
+                      data-percent="90"
+                    ></div>
+                  </div>
+                </div>
+                <div class="languages__item">
+                  <p>English</p>
+                  <div class="languages__progress-bar">
+                    <div
+                      class="languages__progress-value"
+                      data-percent="65"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content__section">
+              <h3 class="content__title">Code Examples</h3>
+              <p>
+                Function that takes an array of numbers and returns the sum of
+                the numbers. If the array does not contain any numbers then
+                returns 0.
+              </p>
+              <code>
+                const sum = (numbers) => numbers.reduce((acc, item) => acc +
+                item, 0);
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (() => {
+        const targetToStartBarAnimation = document.querySelector(
+          ".content__languages"
+        );
+        const bars = document.querySelectorAll(
+          ".languages__item .languages__progress-value"
+        );
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                bars.forEach((barItem) => {
+                  const barValue = barItem.dataset.percent;
+                  barItem.style.width = barValue + "%";
+                });
+              }
+            });
+          },
+          {
+            threshold: 0.5,
+          }
+        );
+        observer.observe(targetToStartBarAnimation);
+      })();
+    </script>
+  </body>
 </html>
