@@ -14,7 +14,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>CV</title>
   </head>
   <body>
@@ -35,53 +38,98 @@
             <div class="sidebar__content">
               <div class="sidebar__section sidebar__contact">
                 <h3 class="sidebar__title">Contact</h3>
-                <ul style="list-style: none;padding-left: 20px;">
-                  <li class="contact__item"><i class="fa fa-phone"></i>   <a href="tel:+77764222201" class="link" target="_blank">+7 776 422 22 01</a></li>
-                  <li class="contact__item"><i class="fa-solid fa-envelope"></i> <a href="mailto:zh.zhanybek@gmail.com" class="link" target="_blank">zh.zhanybek@gmail.com</a></li>
-                  <li class="contact__item"i><i class="fa-brands fa-telegram"></i> <a href="https://tttttt.me/Zhandaaa" class="link" target="_blank">Zhandaaa</a></li>
-                  <li class="contact__item"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/zhandos-zhanybek-bb502a207/" class="link" target="_blank"> Zhanybek Zhandos</a> </li>
+                <ul style="list-style: none; padding-left: 20px">
+                  <li class="contact__item">
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:+77764222201" class="link" target="_blank"
+                      >+7 776 422 22 01</a
+                    >
+                  </li>
+                  <li class="contact__item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a
+                      href="mailto:zh.zhanybek@gmail.com"
+                      class="link"
+                      target="_blank"
+                      >zh.zhanybek@gmail.com</a
+                    >
+                  </li>
+                  <li class="contact__item" i>
+                    <i class="fa-brands fa-telegram"></i>
+                    <a
+                      href="https://tttttt.me/Zhandaaa"
+                      class="link"
+                      target="_blank"
+                      >Zhandaaa</a
+                    >
+                  </li>
+                  <li class="contact__item">
+                    <i class="fa-brands fa-linkedin"></i
+                    ><a
+                      href="https://www.linkedin.com/in/zhandos-zhanybek-bb502a207/"
+                      class="link"
+                      target="_blank"
+                    >
+                      Zhanybek Zhandos</a
+                    >
+                  </li>
                 </ul>
               </div>
               <div class="sidebar__section sidebar__education">
                 <h3 class="sidebar__title">Education</h3>
                 <div class="education__item">
-                  <div class="education__title">
-                    Bachelor CS
-                  </div>
+                  <div class="education__title">Bachelor CS</div>
                   <div class="education__text">
                     2011 - 2015 EKTU, Computer science
                   </div>
                 </div>
                 <div class="education__item">
-                  <div class="education__title">
-                    Courses
-                  </div>
-                  <div class="education__text">
-                    hexlet.io
-                  </div>
-                  <div class="education__text">
-                    RSSchool
-                  </div>
+                  <div class="education__title">Courses</div>
+                  <div class="education__text">hexlet.io</div>
+                  <div class="education__text">RSSchool</div>
                 </div>
               </div>
               <div class="sidebar__section sidebar__skills">
                 <h3 class="sidebar__title">Skills</h3>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS (Bootstrap, SASS/SCSS, BEM)</li>
-                  <li>Git, GitHub</li>
-                  <li>PHP</li>
-                  <li>
+                <div class="skills__item">
+                  <div class="skills__name">HTML</div>
+                  <div class="skills__level" data-rate="3"></div>
+                </div>
+                <div class="skills__item">
+                  <div class="skills__name">
+                    CSS (Bootstrap, SASS/SCSS, BEM)
+                  </div>
+                  <div class="skills__level" data-rate="3"></div>
+                </div>
+                <div class="skills__item">
+                  <div class="skills__name">Git, GitHub</div>
+                  <div class="skills__level" data-rate="3"></div>
+                </div>
+                <div class="skills__item">
+                  <div class="skills__name">
                     JavaScript (Fundamentals, ES6+, DOM, JSON, Asynchronous
                     JavaScript)
-                  </li>
-                  <li>React</li>
-                  <li>VS Code, IntelliJ IDEA</li>
-                  <li>Photoshop, Figma</li>
-                </ul>
+                  </div>
+                  <div class="skills__level" data-rate="3"></div>
+                </div>
+                <div class="skills__item">
+                  <div class="skills__name">PHP</div>
+                  <div class="skills__level" data-rate="2"></div>
+                </div>
+                <div class="skills__item">
+                  <div class="skills__name">React</div>
+                  <div class="skills__level" data-rate="1"></div>
+                </div>
+                <div class="skills__item">
+                  <div class="skills__name">VS Code, IntelliJ IDEA</div>
+                  <div class="skills__level" data-rate="3"></div>
+                </div>
+                <div class="skills__item">
+                  <div class="skills__name">Photoshop, Figma</div>
+                  <div class="skills__level" data-rate="3"></div>
+                </div>
               </div>
             </div>
-           
           </div>
           <div class="content col-9">
             <div class="content__header">
@@ -221,14 +269,20 @@
         const bars = document.querySelectorAll(
           ".languages__item .languages__progress-value"
         );
-        const observer = new IntersectionObserver(
+
+        const animateBars = () => {
+          bars.forEach((barItem) => {
+            const barValue = barItem.dataset.percent;
+            barItem.style.width = barValue + "%";
+          });
+        };
+
+        const observerLanguages = new IntersectionObserver(
           (entries, observer) => {
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
-                bars.forEach((barItem) => {
-                  const barValue = barItem.dataset.percent;
-                  barItem.style.width = barValue + "%";
-                });
+                animateBars();
+                observer.unobserve(entry.target);
               }
             });
           },
@@ -236,7 +290,57 @@
             threshold: 0.5,
           }
         );
-        observer.observe(targetToStartBarAnimation);
+        if (targetToStartBarAnimation) {
+          observerLanguages.observe(targetToStartBarAnimation);
+        } else {
+          console.error("Element .content__languages not found");
+        }
+
+        const targetToStartRateAnimation =
+          document.querySelector(".sidebar__skills");
+        const rates = document.querySelectorAll(
+          ".sidebar__skills .skills__level"
+        );
+
+        const animateRates = () => {
+          rates.forEach((rateItem) => {
+            const rateValue = rateItem.dataset.rate;
+            rateItem.innerHTML = "";
+
+            const fragment = document.createDocumentFragment();
+            for (let i = 1; i <= 3; i += 1) {
+              const div = document.createElement("div");
+              div.classList.add("skills__rate");
+              if (i <= rateValue) {
+                div.classList.add("skills__rate_black");
+              }
+              fragment.appendChild(div);
+              setTimeout(() => {
+                div.classList.add("skills__rate_visible");
+              }, i * 300);
+            }
+            rateItem.appendChild(fragment);
+          });
+        };
+
+        const observerRates = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animateRates();
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.5,
+          }
+        );
+        if (targetToStartRateAnimation) {
+          observerRates.observe(targetToStartRateAnimation);
+        } else {
+          console.error("Element .sidebar__skills not found");
+        }
       })();
     </script>
   </body>

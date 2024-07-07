@@ -59,6 +59,36 @@ h1, h2, h3, h4, h5, h6 {
   border-radius:50%;
   transform: translateY(-50%);
 }
+.skills__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+.skills__level {
+  display: flex;
+  gap:5px;
+  align-items: center;
+  min-width:70px;
+}
+.skills__rate {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.skills__rate_black { 
+  background-color: black;
+}
+
+.skills__rate_visible {
+  opacity: 1;
+  transform: scale(1);
+}
 .bold {
   font-weight: 700;
 }
