@@ -21,8 +21,18 @@
     <title>CV</title>
   </head>
   <body>
-    <header>
-      <nav></nav>
+    <header class="header_wrapper">
+      <div class="container">
+        <div class="header">
+          <p>Zhanybek Zhandos</p>
+          <nav>
+            <a href="#exp">Experience</a>
+            <a href="#lang">Languages</a>
+            <a href="#edu">Education</a>
+            <a href="#skills">Skills</a>
+          </nav>
+        </div>
+      </div>
     </header>
     <main class="main-cv">
       <div class="container">
@@ -32,7 +42,7 @@
               <img
                 class="sidebar__img"
                 src="./assets/img/ava.webp"
-                alt="Фотография Жаныбек Жандос"
+                alt="User avatar Zhanybek Zhandos"
               />
             </div>
             <div class="sidebar__content">
@@ -42,8 +52,7 @@
                   <li class="contact__item">
                     <i class="fa fa-phone"></i>
                     <a href="tel:+77764222201" class="link" target="_blank"
-                      >+7 776 422 22 01</a
-                    >
+                      >+7 776 422 22 01</a>
                   </li>
                   <li class="contact__item">
                     <i class="fa-solid fa-envelope"></i>
@@ -75,7 +84,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="sidebar__section sidebar__education">
+              <div id="edu" class="sidebar__section sidebar__education">
                 <h3 class="sidebar__title">Education</h3>
                 <div class="education__item">
                   <div class="education__title">Bachelor CS</div>
@@ -89,7 +98,7 @@
                   <div class="education__text">RSSchool</div>
                 </div>
               </div>
-              <div class="sidebar__section sidebar__skills">
+              <div id="skills" class="sidebar__section sidebar__skills">
                 <h3 class="sidebar__title">Skills</h3>
                 <div class="skills__item">
                   <div class="skills__name">HTML</div>
@@ -142,7 +151,7 @@
                 switch to front-end development.
               </p>
             </div>
-            <div class="content__section experience">
+            <div id="exp" class="content__section experience">
               <h3 class="content__title">Work experience</h3>
               <div class="experience__item">
                 <div class="experience__position">
@@ -207,7 +216,7 @@
                 </p>
               </div>
             </div>
-            <div class="content__section">
+            <div id="lang" class="content__section">
               <h3 class="content__title">Languages</h3>
               <div class="content__languages languages">
                 <div class="languages__item">
@@ -255,7 +264,20 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer__wrapper">
+      <div class="container">
+        <div class="footer">
+          <a href="https://rs.school/courses/javascript-ru" class="school__link">
+            <img src="./assets/img/rs-school-logo.svg" alt="RSSchool link"
+          /></a>
+          <a href="https://github.com/zhanybekzh" class="footer__author-link">
+            <i class="fa-brands fa-github fa-2xl"></i>
+          </a>
+          <div class="date-creation">2024</div>
+          
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
