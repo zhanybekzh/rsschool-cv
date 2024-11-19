@@ -1,12 +1,17 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
-header .container{
-  background-color: #FEBB59;
+header .container {
+  background-color: #febb59;
   border-right: 5px solid black;
 }
 .header {
@@ -25,15 +30,15 @@ header .container{
   display: flex;
   gap: 20px;
 }
-.header nav a{
+.header nav a {
   color: black;
   text-decoration: none;
 }
-.header nav a:hover{
+.header nav a:hover {
   text-decoration: underline;
 }
-.footer__wrapper .container{
-  background-color: #FEBB59;
+.footer__wrapper .container {
+  background-color: #febb59;
   border-top: 5px solid black;
 }
 .footer {
@@ -41,7 +46,6 @@ header .container{
   align-items: center;
   font-weight: 700;
   min-height: 70px;
-
 }
 .footer .footer__author-link {
   display: block;
@@ -53,14 +57,14 @@ header .container{
 }
 .footer .school__link img {
   display: block;
-  width:100px;
+  width: 100px;
 }
 .footer .date-creation {
   text-align: center;
   margin-left: auto;
 }
 .link {
-  color:#333;
+  color: #333;
   text-decoration: none;
 }
 .link:hover {
@@ -70,7 +74,7 @@ header .container{
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #FEBB59;
+  background-color: #febb59;
 }
 .sidebar .sidebar__content {
   padding: 20px;
@@ -78,7 +82,7 @@ header .container{
   padding-top: 100px;
   margin-top: -115px;
   z-index: 2;
-  background-color: #FEBB59;
+  background-color: #febb59;
   margin-left: -15px;
   margin-right: -15px;
   clip-path: polygon(0% 0, 100% 7%, 100% 100%, 0px 100%);
@@ -89,19 +93,19 @@ header .container{
 .sidebar__title {
   margin-bottom: 20px;
 }
-.sidebar .sidebar__img{
+.sidebar .sidebar__img {
   z-index: 1;
-    position: relative;
+  position: relative;
   margin-left: -15px;
   margin-right: -15px;
   width: calc(100% + 30px);
 }
 .sidebar .sidebar__contacts-container {
-  list-style: none; 
-  padding-left: 20px
+  list-style: none;
+  padding-left: 20px;
 }
 .sidebar .sidebar__contact {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 .sidebar__contact .contact__item {
   margin-bottom: 20px;
@@ -124,7 +128,7 @@ header .container{
   background-color: #000;
   width: 20px;
   height: 20px;
-  border-radius:50%;
+  border-radius: 50%;
   transform: translateY(-50%);
 }
 .skills__item {
@@ -135,9 +139,9 @@ header .container{
 }
 .skills__level {
   display: flex;
-  gap:5px;
+  gap: 5px;
   align-items: center;
-  min-width:70px;
+  min-width: 70px;
 }
 .skills__rate {
   display: block;
@@ -147,9 +151,11 @@ header .container{
   border: 1px solid black;
   opacity: 0;
   transform: scale(0.8);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
 }
-.skills__rate_black { 
+.skills__rate_black {
   background-color: black;
 }
 
@@ -174,21 +180,20 @@ header .container{
 }
 .content {
   padding-bottom: 70px;
-  border-right: 5px solid #FEBB59;
+  border-right: 5px solid #febb59;
 }
 .content__header {
   padding: 100px 40px 50px;
   min-height: 460px;
 }
-.content__header h1{
+.content__header h1 {
   font-size: 70px;
   margin-bottom: 0;
 }
-.content__header h2{
+.content__header h2 {
   font-size: 20px;
   margin-bottom: 50px;
   font-weight: 400;
-
 }
 .content__section {
   padding: 20px 40px;
@@ -208,7 +213,7 @@ header .container{
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #FEBB59;
+  background-color: #febb59;
 }
 .experience__title {
   margin-bottom: 0;
@@ -219,26 +224,24 @@ header .container{
 .experience__company {
   display: flex;
   justify-content: space-between;
-
 }
 .content__languages.languages {
   display: flex;
   flex-wrap: wrap;
-
 }
 .languages .languages__item {
   flex: 1 0 33.333%;
   padding-right: 20px;
 }
 .languages__item .languages__progress-bar {
-  width:100%;
-  background-color:#E8DCD4;
+  width: 100%;
+  background-color: #e8dcd4;
   height: 20px;
   border-radius: 10px;
 }
 .languages__item .languages__progress-value {
-  width:0;
-  background-color: #FEBB59;
+  width: 0;
+  background-color: #febb59;
   height: 20px;
   border-radius: 10px;
   transition: all 1s ease-in;
@@ -253,4 +256,3 @@ code {
   border: 1px solid #ddd;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
-
