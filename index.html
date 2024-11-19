@@ -26,15 +26,15 @@
         <div class="header">
           <p>Zhanybek Zhandos</p>
           <nav>
-            <a href="#exp" title="experience" aria-label="Experience"
-              >Experience</a
-            >
-            <a href="#lang" title="languages" aria-label="Languages"
-              >Languages</a
-            >
-            <a href="#edu" title="education" aria-label="Education"
-              >Education</a
-            >
+            <a href="#exp" title="experience" aria-label="Experience">
+              Experience
+            </a>
+            <a href="#lang" title="languages" aria-label="Languages">
+              Languages
+            </a>
+            <a href="#edu" title="education" aria-label="Education">
+              Education
+            </a>
             <a href="#skills" title="skills" aria-label="Skills">Skills</a>
           </nav>
         </div>
@@ -75,8 +75,9 @@
                       target="_blank"
                       title="mail"
                       aria-label="mail"
-                      >zh.zhanybek@gmail.com</a
                     >
+                      zh.zhanybek@gmail.com
+                    </a>
                   </li>
                   <li class="contact__item">
                     <i class="fa-brands fa-telegram"></i>
@@ -86,8 +87,9 @@
                       target="_blank"
                       title="telegram"
                       aria-label="telegram"
-                      >Zhandaaa</a
                     >
+                      Zhandaaa
+                    </a>
                   </li>
                   <li class="contact__item">
                     <i class="fa-brands fa-linkedin"></i>
@@ -98,8 +100,8 @@
                       title="linkedin"
                       aria-label="linkedin"
                     >
-                      Zhanybek Zhandos</a
-                    >
+                      Zhanybek Zhandos
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -292,8 +294,8 @@
             title="rs school"
             aria-label="rs school"
           >
-            <img src="./assets/img/rs-school-logo.svg" alt="RSSchool link"
-          /></a>
+            <img src="./assets/img/rs-school-logo.svg" alt="RSSchool link" />
+          </a>
           <a
             href="https://github.com/zhanybekzh"
             class="footer__author-link"
@@ -314,10 +316,10 @@
     <script>
       (() => {
         const targetToStartBarAnimation = document.querySelector(
-          '.content__languages',
+          '.content__languages'
         );
         const bars = document.querySelectorAll(
-          '.languages__item .languages__progress-value',
+          '.languages__item .languages__progress-value'
         );
 
         const animateBars = () => {
@@ -337,8 +339,8 @@
             });
           },
           {
-            threshold: 0.5,
-          },
+            threshold: 0.5
+          }
         );
         if (targetToStartBarAnimation) {
           observerLanguages.observe(targetToStartBarAnimation);
@@ -349,7 +351,7 @@
         const targetToStartRateAnimation =
           document.querySelector('.sidebar__skills');
         const rates = document.querySelectorAll(
-          '.sidebar__skills .skills__level',
+          '.sidebar__skills .skills__level'
         );
 
         const animateRates = () => {
@@ -383,8 +385,8 @@
             });
           },
           {
-            threshold: 0.5,
-          },
+            threshold: 0.5
+          }
         );
         if (targetToStartRateAnimation) {
           observerRates.observe(targetToStartRateAnimation);
