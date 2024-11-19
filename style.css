@@ -96,6 +96,10 @@ header .container{
   margin-right: -15px;
   width: calc(100% + 30px);
 }
+.sidebar .sidebar__contacts-container {
+  list-style: none; 
+  padding-left: 20px
+}
 .sidebar .sidebar__contact {
   font-size: .8rem;
 }
